@@ -1,0 +1,43 @@
+/* line 1, ../sass/print.scss */
+* {
+  background: transparent !important;
+  color: black !important;
+  text-shadow: none !important;
+  filter: none !important;
+  -ms-filter: none !important;
+}
+
+/* line 2, ../sass/print.scss */
+a, a:visited {
+  color: #444 !important;
+  text-decoration: underline;
+}
+
+/* line 3, ../sass/print.scss */
+a[href]:after {
+  content: " (" attr(href) ")";
+}
+
+/* line 4, ../sass/print.scss */
+tr, img {
+  page-break-inside: avoid;
+}
+
+/* line 5, ../sass/print.scss */
+img {
+  max-width: 100% !important;
+}
+
+@page {
+  margin: 0.5cm;
+}
+/* line 7, ../sass/print.scss */
+p, h2, h3 {
+  orphans: 3;
+  widows: 3;
+}
+
+/* line 8, ../sass/print.scss */
+h2, h3 {
+  page-break-after: avoid;
+}
